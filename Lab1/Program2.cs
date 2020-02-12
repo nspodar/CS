@@ -51,7 +51,7 @@ namespace CS_Lab1._2
             {
                 sw.WriteLine(enText);
             }
-            Console.WriteLine("Текст закодований задопомогою встроєної бібліотеки:\n" + enText + "\n\n\n");
+            Console.WriteLine("За допомогою вбудованої бібліотеки:\n" + enText + "\n\n\n");
         }
         static void Main(string[] args)
         {
