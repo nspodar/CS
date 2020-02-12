@@ -22,8 +22,6 @@ namespace CS_Lab1._2
                 text = sr.ReadToEnd();
             }
             byte[] textBytes = Encoding.UTF8.GetBytes(text);
-
-            //string binaryTextBytes1 = textBytes.Select(x => Convert.ToString(x, 2).PadLeft(8, '0'));
             string binaryTextBytes = string.Join("", textBytes.Select(x => Convert.ToString(x, 2).PadLeft(8, '0')));
             int countOfBytes = binaryTextBytes.Count();
             string append = countOfBytes % 3 == 2 ? "==" : countOfBytes % 3 == 1 ? "=" : "";
